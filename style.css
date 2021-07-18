@@ -1,0 +1,356 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.economica {
+    font-family: 'Economica', sans-serif;
+}
+
+.section {
+    width: calc(100% - 132px);
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.section-titles {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: darkred;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.navigation-bar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navigation-bar nav {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-bar nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: White;
+    border-bottom: solid transparent;
+    transition: all 225ms ease-in-out;
+}
+
+.navigation-bar nav a:hover {
+    border-bottom: 2px solid White;
+    transition: all 225ms ease-in-out;
+}
+
+#phone-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid White;
+    border-radius: 5px;
+    background-color: Red;
+    padding: 5px;
+}
+
+#phone-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.header {
+    background-image: url("img/bgr1.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    color: white;
+    line-height: 0;
+    text-align: center;
+}
+
+.header-content-2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    line-height: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.header-content p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.order {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.orders {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.order-child {
+    color: Black;
+    text-align: center;
+    margin: 16px;
+}
+
+.order-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.menu {
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.menu-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.menu-item img,
+table {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.menu-item table {
+    flex-grow: 0.5;
+}
+
+.menu-item table tbody {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: grey;
+    font-size: xx-large;
+}
+
+.menu-item table tbody tr td:last-child {
+    text-align: right;
+}
+
+.menu-item table caption p {
+    font-family: "Economica", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.info {
+    background-color: white;
+    line-height: 0;
+    text-align: center;
+}
+
+.info p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.map-image {
+    width: 100%;
+    object-fit: contain;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-buttons a {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.ml-32 {
+    margin-left: 32px;
+}
+
+.mr-32 {
+    margin-right: 32px;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+@media (max-width: 900px) {
+    .menu-item img {
+        width: 200px;
+        height: 200px;
+    }
+    .menu-item table caption p {
+        font-size: 40px;
+    }
+    .menu-item table tbody {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-content h1 {
+        font-size: 55px;
+    }
+    .menu-item img {
+        width: 150px;
+        height: 150px;
+    }
+    .menu-item table caption p {
+        font-size: 30px;
+    }
+    .menu-item table tbody {
+        font-size: large;
+    }
+    .info p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation-bar nav {
+        display: none;
+    }
+    .section-titles {
+        font-size: 40px;
+    }
+    .menu-item img {
+        width: 100px;
+        height: 100px;
+    }
+    .menu-item table caption p {
+        font-size: 20px;
+    }
+    .menu-item table tbody {
+        font-size: small;
+    }
+    .info p {
+        font-size: 15px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .section {
+        width: calc(100% - 64px);
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .header-content p {
+        font-size: 10px;
+    }
+    .section-titles {
+        font-size: 30px;
+    }
+    .info p {
+        font-size: 12px;
+    }
+}
